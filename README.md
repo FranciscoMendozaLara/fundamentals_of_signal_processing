@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 Ensure you have Python 3.8 or later installed.
 
-How to Use
+## How to Use
 
 Clone the repository and navigate to the relevant scripts:
 
@@ -43,10 +43,10 @@ Run individual scripts with:
 python script_name.py
 ```
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with improvements or additional examples.
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
