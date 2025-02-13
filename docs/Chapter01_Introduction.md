@@ -40,13 +40,13 @@ By applying mathematical and algorithmic techniques, signal processing enables:
 
 ## 1.3 Signals, Systems, and Convolution
 
-At the heart of many signal processing methods is the concept of **linear systems** and the operation called **convolution**. A linear time-invariant (LTI) system processes an input signal \( x(t) \) to produce an output \( y(t) \). The relationship between \( x(t) \) and \( y(t) \) is given by:
+At the heart of many signal processing methods is the concept of **linear systems** and the operation called **convolution**. A linear time-invariant (LTI) system processes an input signal $$\( x(t) \)$$ to produce an output $$\( y(t) \)$$. The relationship between $$\( x(t) \)$$ and $$\( y(t) \)$$ is given by:
 
-\[
+\$$
 y(t) = x(t) * h(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau
-\]
+\$$
 
-where \( h(t) \) is the **impulse response** of the system. In practice, you’ll often use digital approximations of convolution to simulate system behavior.
+where $$\( h(t) \)$$ is the **impulse response** of the system. In practice, you’ll often use digital approximations of convolution to simulate system behavior.
 
 > **Interactive Example:**  
 > Check out [1_visualizing_convolution.py](./examples/1_visualizing_convolution.py) in the `examples/` folder to see how a unit step function convolved with an exponential decay yields the system’s output.

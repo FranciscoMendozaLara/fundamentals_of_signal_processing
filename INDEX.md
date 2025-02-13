@@ -1,6 +1,6 @@
 # Table of Contents
 
-1. [Chapter 1: Introduction to Signal Processing](Chapter01_Introduction.md)
+1. [Chapter 1: Introduction to Signal Processing](docs/Chapter01_Introduction.md)
    - What is a Signal?
    - Why Signal Processing?
    - Signals, Systems, and Convolution
@@ -8,7 +8,7 @@
    - Tools and Libraries
    - How to Navigate This Book
 
-2. [Chapter 2: Fundamentals of Signals and Systems](Chapter02_Fundamentals.md)
+2. [Chapter 2: Fundamentals of Signals and Systems](docs/Chapter02_Fundamentals.md)
    - Time Domain Analysis
    - Signal Representation: Continuous and Discrete
    - Convolution and Impulse Response
