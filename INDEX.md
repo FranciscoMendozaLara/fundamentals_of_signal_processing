@@ -14,13 +14,13 @@
    - Convolution and Impulse Response
    - Interactive Examples and Exercises
 
-3. [Chapter 3: Fourier Transform and Frequency Domain Analysis](Chapter03_Fourier.md)
+3. [Chapter 3: Fourier Transform and Frequency Domain Analysis](docs/Chapter03_Fourier.md)
    - Fourier Series and Fourier Transform Basics
    - Spectral Analysis of Signals
    - Practical Examples using Python
    - Interactive Fourier Transform Visualizations
 
-4. [Chapter 4: Simulating and Analyzing EEG Signals](Chapter04_SimulatedEEG.md)
+4. [Chapter 4: Simulating and Analyzing EEG Signals](doc/Chapter04_SimulatedEEG.md)
    - Introduction to EEG Signals
    - Simulating EEG with Python
    - Frequency Analysis of EEG Data
