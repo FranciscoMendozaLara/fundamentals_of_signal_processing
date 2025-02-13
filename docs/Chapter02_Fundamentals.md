@@ -40,10 +40,10 @@ A **signal** is any function that conveys information about a physical phenomeno
 
 ### Discrete Signals
 - Result from sampling a continuous signal:
-  $$
-  x[n] = x(nT)
-  $$
-  where $$ T $$ is the sampling period.
+  
+  $$x[n] = x(nT)$$
+
+  where $$T$$ is the sampling period.
 - Only defined at discrete time points.
 
 **Interactive Example:**
@@ -58,10 +58,9 @@ A **system** takes an input signal and produces an output signal. In signal proc
 - **Time-Invariance:** The system's behavior does not change over time.
 
 ### Impulse Response
-An LTI system is fully characterized by its **impulse response** $$ h(t) $$. Given an input $$x(t) $$, the output $$ y(t) $$ is determined by:
-$$
-y(t) = (x * h)(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau
-$$
+An LTI system is fully characterized by its **impulse response** $$h(t)$$. Given an input $$x(t)$$, the output $$y(t)$$ is determined by:
+
+$$y(t) = (x * h)(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau$$
 
 ---
 
@@ -71,13 +70,10 @@ $$
 Convolution is a mathematical operation that blends two functions to produce a third function that expresses how the shape of one is modified by the other.
 
 - **Continuous Convolution:**
-  $$
-  y(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau
-  $$
+  $$y(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau$$
+
 - **Discrete Convolution:**
-  $$
-  y[n] = \sum_{k=-\infty}^{\infty} x[k] \, h[n-k]
-  $$
+  $$y[n] = \sum_{k=-\infty}^{\infty} x[k] \, h[n-k]$$
 
 ### Why is Convolution Important?
 - **System Analysis:**  

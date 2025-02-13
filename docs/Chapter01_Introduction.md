@@ -46,7 +46,7 @@ $$
 y(t) = x(t) * h(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau
 $$
 
-where $$ h(t) $$ is the **impulse response** of the system. In practice, you’ll often use digital approximations of convolution to simulate system behavior.
+where $$h(t)$$ is the **impulse response** of the system. In practice, you’ll often use digital approximations of convolution to simulate system behavior.
 
 > **Interactive Example:**  
 > Check out [1_visualizing_convolution.py](./examples/1_visualizing_convolution.py) in the `examples/` folder to see how a unit step function convolved with an exponential decay yields the system’s output.
