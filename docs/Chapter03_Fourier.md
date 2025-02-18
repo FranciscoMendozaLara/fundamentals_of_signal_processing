@@ -20,8 +20,8 @@ In this chapter, we will cover:
 For periodic signals, the **Fourier Series** allows us to express the signal as a sum of sines and cosines:
 $$x(t) = \sum_{n=-\infty}^{\infty} c_n \, e^{j 2\pi n f_0 t}$$
 where:
-- $$f_0$$ is the fundamental frequency.
-- $$c_n$$ are the Fourier coefficients.
+- $f_0$ is the fundamental frequency.
+- $c_n$ are the Fourier coefficients.
 
 This representation highlights that a periodic signal can be thought of as being built from a set of discrete frequency components.
 
@@ -35,11 +35,27 @@ and the inverse Fourier Transform is given by:
 $$x(t) = \int_{-\infty}^{\infty} X(f) \, e^{j 2\pi f t} \, df$$
 
 **Key Points:**
-- The Fourier Transform converts a time-domain signal $$x(t)$$ into its frequency-domain representation $$X(f)$$.
+- The Fourier Transform converts a time-domain signal $(x(t))$ into its frequency-domain representation $(X(f))$.
 - It reveals the amplitude and phase of the different frequency components present in the signal.
 - The transform is linear and has several useful properties (e.g., time-shift, frequency-shift, convolution).
 
----
+### Time and Frequency Domain Representation
+
+A fundamental concept in signal processing is the transformation between the time domain and the frequency domain. This transformation is achieved using the **Fourier Transform**, which decomposes a signal into its constituent frequency components.
+
+### Time Domain Signal
+The plot below shows a modulated sinusoidal waveform in the time domain. This type of signal occurs in applications such as:
+- Amplitude Modulation (AM) in communication systems.
+- Beat frequency generation in physics and audio processing.
+
+### Frequency Domain Analysis
+The **Fourier Transform** of this signal is shown in the lower plot. It reveals two distinct frequency components, confirming that the time-domain signal is composed of two sinusoidal waves of different frequencies.
+
+
+![Fourier transform image](../images/fourier_transform.png)
+<sup>**Figure 2**: The top plot shows a modulated sinusoidal waveform in the time domain, which consists of two different frequency components. The bottom plot represents its **Fourier Transform**, revealing two distinct frequency peaks corresponding to the sinusoidal components of the signal. This visualization highlights the importance of Fourier analysis in signal processing, where complex signals can be decomposed into their fundamental frequencies.</sup>
+
+This demonstrates how Fourier analysis allows us to extract frequency information from a complex signal, making it an essential tool in digital signal processing (DSP).
 
 ## 3.4 Discrete Fourier Transform (DFT) and FFT
 

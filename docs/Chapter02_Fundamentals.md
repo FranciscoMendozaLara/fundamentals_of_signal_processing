@@ -43,7 +43,7 @@ A **signal** is any function that conveys information about a physical phenomeno
   
   $$x[n] = x(nT)$$
 
-  where $$T$$ is the sampling period.
+  where $T$ is the sampling period.
 - Only defined at discrete time points.
 
 **Interactive Example:**
@@ -58,7 +58,7 @@ A **system** takes an input signal and produces an output signal. In signal proc
 - **Time-Invariance:** The system's behavior does not change over time.
 
 ### Impulse Response
-An LTI system is fully characterized by its **impulse response** $$h(t)$$. Given an input $$x(t)$$, the output $$y(t)$$ is determined by:
+An LTI system is fully characterized by its **impulse response** $h(t)$. Given an input $x(t)$, the output $y(t)$ is determined by:
 
 $$y(t) = (x * h)(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau$$
 
@@ -67,7 +67,8 @@ $$y(t) = (x * h)(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau$$
 ## 2.5 Convolution: The Heart of LTI Systems
 
 ### What is Convolution?
-Convolution is a mathematical operation that blends two functions to produce a third function that expresses how the shape of one is modified by the other.
+
+Convolution is a fundamental operation in signal processing, used to determine how a system responds to an input signal. It is a mathematical operation that blends two functions to produce a third function that expresses how the shape of one is modified by the other.
 
 - **Continuous Convolution:**
   $$y(t) = \int_{-\infty}^{\infty} x(\tau) \, h(t - \tau) \, d\tau$$
@@ -80,6 +81,21 @@ Convolution is a mathematical operation that blends two functions to produce a t
   It allows us to determine the output of an LTI system given any arbitrary input.
 - **Filtering:**  
   Many filtering operations (e.g., low-pass, high-pass) are implemented via convolution.
+
+The figure below illustrates the convolution of an input function $( x(t) )$ with an impulse response $( h(t))$.
+
+![Convolution of x(t) and h(t)](../images/convolution.png)
+
+<sup>**Figure 1**: This figure illustrates the convolution of an input signal $(x(t))$ (blue) with an impulse response $(h(t))$ (orange), resulting in the output $(y(t))$ (green). The convolution operation represents the system's response over time, showing how the input signal interacts with the system's impulse response. In this case, $(y(t))$ gradually accumulates the effect of $(h(t))$, demonstrating the smoothing and memory properties of convolution in linear time-invariant (LTI) systems.</sup>
+
+
+### Explanation
+- **$( x(t) )$ (Input Signal, Blue):** A step function with amplitude 1.
+- **$( h(t) )$ (Impulse Response, Orange):** An exponential decay function.
+- **$( y(t) )$ (Output Signal, Green):** The convolution result, showing how the system accumulates the effect of the impulse response over time.
+
+This convolution illustrates the fundamental concept of **linear time-invariant (LTI) system response**, where the output is determined by integrating the past influence of the input weighted by the system’s impulse response.
+
 
 **Interactive Example:**
 Run [1_visualizing_convolution.py](./examples/1_visualizing_convolution.py) to see a visual demonstration of convolution in action.
